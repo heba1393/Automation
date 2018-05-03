@@ -31,7 +31,7 @@ public class test {
     @Before
     public void mapTest() throws Exception {
 
-        driver =MobDriver.initDriver();
+        driver = MobDriver.initDriver();
 //        String serverUrl = "http://127.0.0.1:4723/wd/hub";
 //        DesiredCapabilities capabilities = new DesiredCapabilities();
 //        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPad Pro (9.7-inch)");
@@ -54,31 +54,38 @@ public class test {
 
     @Test
     public void sampleTest() throws Exception {
+
+
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"0\"]")).click();        //issue  ^^^
 
-//        driver.findElements(By.className("XCUIElementTypeTable") && By.xpath("")).get(2).click();
-//      driver.findElement(By.xpath("//XCUIElementTypeStaticText[@name=\"External_Switch1\"]")).click();
+//        Boolean isMapDisplayed1 = driver.findElement(By.id("UI-Iv-Logo")).isDisplayed();
+//        System.out.println(isMapDisplayed1);
 
-        // Get all cells
-//        List<IOSElement> listCells = driver.findElements(By.className("XCUIElementTypeCell"));
-//        WebElement parentCell = null;
+
+
+
+        driver.findElement(By.id("UI-Btn-AllLocation")).click();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+        Boolean isMapDisplayed2 = driver.findElement(By.id("UI-Lbl-Location")).isDisplayed();
+        System.out.println(isMapDisplayed2);
+
+
+        Boolean isMapDisplayed3 = driver.findElement(By.id("UI-Btn-DownDevices")).isDisplayed();
+        System.out.println(isMapDisplayed3);
+
+
+
+//        List<IOSElement> labels = driver.findElementsByClassName("XCUIElementTypeCollectionView");
 //
-//        // Iterate all cells to match which one has static text as 'Infiniti'
-//        for (WebElement desiredElement : listCells) {
-//            if (desiredElement.findElement(By.className("XCUIElementTypeStaticText")).getText().equals("Infiniti")) {
-//                parentCell = desiredElement;
-//                break;
-//            }
-//        }
-
-// Check if we found a cell with 'Infiniti', else throw an exception.
-//        if (parentCell == null) {
-//            throw new Exception("No cell with label 'Infiniti' found");
-//        }
-
-// Click the button for the cell with 'Infinit' i.e 'Build Model'
-//        parentCell.findElement(By.className("XCUIElementTypeButton")).click();
+//        IOSElement parentElement = (IOSElement) ((IOSDriver) driver).findElementByIosNsPredicate("(type = \"XCUIElementTypeCollectionView\")");
+//        List<MobileElement> rows = parentElement.findElementsByIosNsPredicate("(type = \"XCUIElementTypeCell\")");
+//        MobileElement cellElement = rows.get(rows.size() - 2);
+//        System.out.println("I'm " + cellElement.getAttribute("name"));
+//        List<MobileElement> videoButtons = cellElement.findElementsById("UI-Btn-AllLocation");
+//
+//        System.out.println(cellElement.isDisplayed());
+//
 
 
         try {

@@ -5,15 +5,14 @@ import cucumber.api.java.Before;
 
 public class Hook {
     @Before
-    public void initalizeTest()
-    {
-    System.out.println("Starthebaaaaaaaaaaaaaaaaa");
+    public void initalizeTest() {
+        System.out.println("Start Test");
+        CommonStepDefinition.getDriver();
     }
 
     @After
-    public void itearDownTest()
-    {
-        System.out.println("stophebaaaaaaaaaaaaaa");
+    public void endTest() {
+        CommonStepDefinition.terminateDriver();
     }
 
 }

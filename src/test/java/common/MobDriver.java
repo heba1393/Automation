@@ -23,7 +23,7 @@ public class MobDriver {
 
         System.out.println("Argument to driver object : " + serverUrl);
         try {
-            driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         } catch (MalformedURLException e) {
             throw new RuntimeException("appium driver could not be initialised for device ");
