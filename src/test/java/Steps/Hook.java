@@ -6,13 +6,12 @@ import cucumber.api.java.Before;
 public class Hook {
     @Before
     public void initalizeTest() {
-        System.out.println("Start Test");
-        CommonStepDefinition.getDriver();
+        System.out.println("-----------------Start of Scenario-----------------");
     }
 
     @After
     public void endTest() {
-        CommonStepDefinition.terminateDriver();
+        System.out.println("-----------------End of Scenario-----------------");
     }
 
 }
