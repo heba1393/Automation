@@ -10,10 +10,8 @@ import java.net.URL;
 
 public class MobDriver {
 
-    private static IOSDriver<IOSElement> driver;
-
     public static IOSDriver<IOSElement> initDriver() {
-
+        IOSDriver<IOSElement> driver;
         String serverUrl = "http://127.0.0.1:4723/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPad Pro (9.7-inch)");
@@ -23,7 +21,7 @@ public class MobDriver {
 
         System.out.println("Argument to driver object : " + serverUrl);
         try {
-            driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+            driver = new IOSDriver<>(new URL(serverUrl), capabilities);
 
         } catch (MalformedURLException e) {
             throw new RuntimeException("appium driver could not be initialised for device ");

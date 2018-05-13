@@ -8,16 +8,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageBase {
-    static IOSDriver<IOSElement> driver;
+    IOSDriver<IOSElement> driver;
     private static final int ELEMENT_WAIT_PERIOD_SECS = 5;
 
-    protected PageBase(IOSDriver<IOSElement> driver) {
+    PageBase(IOSDriver<IOSElement> driver) {
         this.driver = driver;
     }
 
-    public static MapPage initMap() {
-        return new MapPage(driver);
-    }
+//    public static MapPage initMap() {
+//        driver.findElement(By.id("UI-Btn-Map")).click();
+//        return new MapPage(driver);
+//    }
 
     public void waitUntilDisplay(String name) {
         WebDriverWait wait = new WebDriverWait(driver, ELEMENT_WAIT_PERIOD_SECS);
@@ -33,9 +34,6 @@ public class PageBase {
         }
         return isDisplayed;
     }
-
-
-
 
     public void closeDriver() {
         driver.quit();
