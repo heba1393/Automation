@@ -13,7 +13,7 @@ public class MapPage extends PageBase {
 
     public MapPage clickOnMapRedCorner() {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"0\"]")).click();
+//        driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"0\"]")).click();
         return new MapPage(driver);
     }
 //

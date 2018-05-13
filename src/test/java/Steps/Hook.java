@@ -7,8 +7,6 @@ public class Hook {
     @Before
     public void initalizeTest() {
         System.out.println("-----------------Start of Scenario-----------------");
-
-        System.out.println("test ");
     }
 
     @After

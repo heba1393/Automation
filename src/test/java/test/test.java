@@ -30,26 +30,7 @@ public class test {
 
     @Before
     public void mapTest() throws Exception {
-
         driver = MobDriver.initDriver();
-//        String serverUrl = "http://127.0.0.1:4723/wd/hub";
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPad Pro (9.7-inch)");
-//        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
-//        capabilities.setCapability(MobileCapabilityType.APP, "/Users/adnan/Desktop/MobileNOC.app");
-//        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
-////        capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
-////        capabilities.setCapability(IOSMobileCapabilityType.AUTO_ACCEPT_ALERTS, true);
-////        capabilities.setCapability("app","com.cloudconnectiv.MobileNOC");
-//        System.out.println("Argument to driver object : " + serverUrl);
-//        try {
-//            driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-//
-//            Thread.sleep(3000);
-//        } catch (MalformedURLException e) {
-//            throw new RuntimeException("appium driver could not be initialised for device ");
-//        }
-
     }
 
     @Test
@@ -57,12 +38,6 @@ public class test {
 
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-//        Boolean isMapDisplayed1 = driver.findElement(By.id("UI-Iv-Logo")).isDisplayed();
-//        System.out.println(isMapDisplayed1);
-
-
-
 
         driver.findElement(By.id("UI-Btn-AllLocation")).click();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

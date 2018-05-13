@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
         features = {"src/test/java/Featuers/AllLocation.Feature","src/test/java/Featuers/map.Feature"},
         tags = {"@SmokeTest"}
 )
-public class TestRunner {
+public class SmokeTestsRunner {
 
 }
