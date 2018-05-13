@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e58bff-f0a7-43c9-af48-4ea5bc10f735" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Featuers/AllLocation.Feature" afterPath="$PROJECT_DIR$/src/test/java/Featuers/AllLocation.Feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Featuers/map.Feature" afterPath="$PROJECT_DIR$/src/test/java/Featuers/map.Feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllLocationPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllLocationPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MapPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/MapPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PageBase.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/PageBase.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/AllLocationSteps.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/AllLocationSteps.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/CommonStepDefinition.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/CommonStepDefinition.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Hook.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/Hook.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MapSteps.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/MapSteps.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/common/MobDriver.java" afterPath="$PROJECT_DIR$/src/test/java/common/MobDriver.java" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/AllLocationPage.class" afterPath="$PROJECT_DIR$/target/test-classes/Pages/AllLocationPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/MapPage.class" afterPath="$PROJECT_DIR$/target/test-classes/Pages/MapPage.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/PageBase.class" afterPath="$PROJECT_DIR$/target/test-classes/Pages/PageBase.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/TestRunner.class" afterPath="$PROJECT_DIR$/target/test-classes/Runner/TestRunner.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/AllLocationSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/AllLocationSteps.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/CommonStepDefinition.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/CommonStepDefinition.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/Hook.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/Hook.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Steps/MapSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/MapSteps.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/common/MobDriver.class" afterPath="$PROJECT_DIR$/target/test-classes/common/MobDriver.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,7 +14,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Hook.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Hook.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,10 +72,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/AllLocationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/MapSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/CommonStepDefinition.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/Hook.java" />
         <option value="$PROJECT_DIR$/src/test/java/Featuers/AllLocation.Feature" />
         <option value="$PROJECT_DIR$/src/test/java/Featuers/map.Feature" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/MapPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/Hook.java" />
       </list>
     </option>
   </component>
@@ -1023,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Hook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/common/MobDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1091,6 +1074,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Hook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
